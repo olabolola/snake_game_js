@@ -1,7 +1,7 @@
 body{
-    background-color: #c7afb3;
+    background-color: white;
 }
 
 #myCanvas{
-    border:10px solid black;
+    border:5px solid lightsteelblue;
 }
