@@ -121,6 +121,8 @@ class Snake {
             ctx.fillRect(this.body[i].x, this.body[i].y, 10, 10);
         }    
     }
+
+    
 }
 
 class Food {
@@ -175,6 +177,11 @@ function game(){
 
     snake.draw();
     food.draw();
+
+    if(game_ended){
+        snake = new Snake();
+        game_ended = false;
+    }
     
     
 }
