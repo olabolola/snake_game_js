@@ -14,7 +14,7 @@ class Snake {
         this.x_velocity = 1;
         this.y_velocity = 0;
         //The snake has an initial length of this.length
-        this.length = 10;
+        this.length = 50;
         //We have a head to keep track of the initial body element
         this.head = new Position(250, 300);
         //We have a body array to keep track of all elements in the snake body
@@ -180,6 +180,8 @@ function game(){
 
     if(game_ended){
         snake = new Snake();
+        score = 0;
+        document.getElementById("score").innerHTML = "Score is: 0";
         game_ended = false;
     }
     
